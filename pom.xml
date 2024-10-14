@@ -9,6 +9,15 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <profiles>
+        <profile>
+            <id>assemble</id>
+            <properties>
+                <assembly.skipAssembly>false</assembly.skipAssembly>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <!-- Maven Assembly Plugin -->
